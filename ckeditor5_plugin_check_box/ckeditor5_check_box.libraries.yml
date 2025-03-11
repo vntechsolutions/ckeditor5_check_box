@@ -1,0 +1,15 @@
+# This adds the plugin JavaScript to the page.
+# cSpell:ignore simplebox demobox
+
+check_box:
+  js:
+    js/build/ckeditor5_check_box.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+# Loaded in the text format configuration form to provide styling for the icon
+# used in toolbar config.
+admin.check_box:
+  css:
+    theme:
+      css/check_box.admin.css: { }
